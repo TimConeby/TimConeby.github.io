@@ -42,6 +42,26 @@
             border: 5px solid #666; /* Dark gray border for the circle */
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Shadow effect */
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3; /* Darker shade of the button color on hover */
+        }
     </style>
 </head>
 <body>
@@ -49,10 +69,13 @@
         <img src="https://github.com/TimConeby.png" alt="Tim Coneby" class="profile-picture">
         <h1>Welcome to Tim Coneby's Portfolio</h1>
         <p>Explore my projects and learn more about me.</p>
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='resume.html'">Resume</button>
+            <button class="button" onclick="window.location.href='projects.html'">Projects</button>
+            <button class="button" onclick="window.location.href='education.html'">Education</button>
+        </div>
         <p>Visit my LinkedIn profile: <a href="https://www.linkedin.com/in/timconeby/">Here</a></p>
         <p>Visit my GitHub profile: <a href="https://github.com/TimConeby">Here</a></p>
     </div>
 </body>
 </html>
-
-
